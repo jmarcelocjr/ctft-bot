@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "CTFT Bot",
+    "description": "Bot to automate your fishing and eating process",
+    "version": "1.0",
+    "icons":  {
+        "16": "images/48.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+    },
+    "browser_action": {
+        "default_icon": "images/48.png",
+        "default_popup": "popup.html",
+        "default_title": "CTFT Bot"
+    },
+    "permissions": [
+        "activeTab", "tabs", "storage"
+    ],
+    "web_accessible_resources": ["get-account.js", "eat.js", "play.js"],
+    "content_scripts": [
+        {
+            "matches": ["https://cointofish.io/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
