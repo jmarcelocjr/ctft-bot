@@ -14,6 +14,7 @@
             const fishing = $('#1008').closest('.cardr2').find('.list-group-item.list-item-rework').text().split('[').pop().replace(/\D/g, '');
             const stick = $('#1009').closest('.cardr2').find('.list-group-item.list-item-rework').text().split('[').pop().replace(/\D/g, '');
             const charcoal = $('#1010').closest('.cardr2').find('.list-group-item.list-item-rework').text().split('[').pop().replace(/\D/g, '');
+            const net = $('#1040').closest('.cardr2').find('.list-group-item.list-item-rework').text().split('[').pop().replace(/\D/g, '');
 
             const rods = [
                 {
@@ -30,6 +31,11 @@
                     id: 1010,
                     name: 'Charcoal stick',
                     quantity: charcoal
+                },
+                {
+                    id: 1040,
+                    name: 'Fishing net',
+                    quantity: net
                 }
             ].filter(r => r.quantity);
 

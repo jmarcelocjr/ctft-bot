@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "CTFT Bot",
     "description": "Bot to automate your fishing and eating process",
-    "version": "1.0",
+    "version": "1.1",
     "icons":  {
         "16": "images/48.png",
         "48": "images/48.png",
